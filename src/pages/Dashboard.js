@@ -1,38 +1,52 @@
 import React, { useEffect, useState } from 'react';
 import './dashboard.css';
 import axios from 'axios';
+import usebackQuotes from '../assets/usebackQuotes.json';
 
 const Dashboard = () => {
-    const [quotes, setQuote] = useState([]);
+    const [quotes, setQuotes] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+      const [error, setError] = useState('');
 
     useEffect(() => {
         const fetchQuote = async () => {
             try {
-                setLoading(true);
-                const response = await axios.get('https://dummyjson.com/quotes');
-                setQuote(response.data.request);
-            }catch (err) {
-                setError('Could not load quote.')
-            }finally {
+                const response = await axios.get('https://api.api-ninjas.com/v1/quotes',{
+                    headers:{
+                        'X-Api key': import.meta.env.VITE_API_KEY,
+                    }
+                });
+
+                setQuotes(response.data);
+            } catch (apiError) {
+                console.warn("API failled, use useback quotes", apiError);
+            try {
+                const useback = await import('../assets/usebackQuotes.json');
+                setQuotes(useback.default);
+            } catch(jsonError) {
+                console.error('Useback JSON load failed:', jsonError)
+                setError('Could not loadi quotes.');
+            }       
+            } finally {
                 setLoading(false);
-            }
+            };
         };
+
         fetchQuote();
     }, []);
 
     if (loading) return <p>Loading quotes ....</p>;
-    if (error) return <p className="dashboard-er">{error}</p>;
+    if(error) return <p className='dashboard-er'>{error}</p>;
+   
 
   return (
         <div className="dashboard-cont">
             <h1>Dashboard Page</h1>
             <ul className="dashboard-box">
-                {quotes.map((quote) => (
-                    <li className="dashboard-id" key={quote._id}>
-                        <blockquote className="dashboard-text">"{quote.content}"</blockquote> 
-                        <em className="dashboard-author"> {quote.author}</em>
+                {quotes.slice(0,5).map((quote, index) => (
+                    <li className="dashboard-id" key={index}>
+                        <blockquote className="dashboard-text">"{quote.quote}"</blockquote> 
+                        <em className="dashboard-author">{quote.author}</em>
                     </li>
                 ))}
             </ul>

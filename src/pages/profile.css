@@ -2,8 +2,8 @@
     font-size: 20px;
     font-weight: 600;
     background: linear-gradient(90deg, rgb(16, 16, 235), rgb(147, 26, 147));
-    height: 25px;
-    width: auto;
+    height: 45px;
+    width: 125PX;
     border: 2px solid white;
     border-radius: 25px;
     color: white;
@@ -35,7 +35,4 @@ div.profile-cont{
     text-align: center;
     color: black;
     font-weight: 400;
-}
-body {
-  background-color: hotpink;
 }

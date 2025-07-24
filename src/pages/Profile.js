@@ -1,8 +1,13 @@
 import React from 'react';
+import {Navigate} from 'react-router-dom';
 import './profile.css';
 
 const Profile = () => {
     const user = JSON.parse(localStorage.getItem("user"));
+
+    if(!user || user.role !== 'user'){
+        return <Navigate to="./login" replace />;
+    }
 
     return (
     <div className="profile-cont">
