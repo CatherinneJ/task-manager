@@ -11,19 +11,193 @@
     "quote": "Believe you can and you're halfway there.",
     "author": "Theodore Roosevelt"
   },
-  { 
-    "quote": "Life is what happens when you're busy making other plans.", 
-  "author": "John Lennon" },
-  { 
-    "quote": "Do not let what you cannot do interfere with what you can do.", 
-  "author": "John Wooden" },
-  { 
-    "quote": "The best way to get started is to quit talking and begin doing.", 
-    "author": "Walt Disney" },
-  { 
-    "quote": "Your time is limited, don’t waste it living someone else’s life.", 
-    "author": "Steve Jobs" },
-  { 
-    "quote": "If you want to achieve greatness stop asking for permission.", 
-    "author": "Anonymous" }
+  {
+    "quote": "Life is what happens when you're busy making other plans.",
+    "author": "John Lennon"
+  },
+  {
+    "quote": "Do not let what you cannot do interfere with what you can do.",
+    "author": "John Wooden"
+  },
+  {
+    "quote": "The best way to get started is to quit talking and begin doing.",
+    "author": "Walt Disney"
+  },
+  {
+    "quote": "Your time is limited, don’t waste it living someone else’s life.",
+    "author": "Steve Jobs"
+  },
+  {
+    "quote": "If you want to achieve greatness stop asking for permission.",
+    "author": "Anonymous"
+  },
+  {
+    "quote": "If I cannot do great things, I can do small things in a great way.",
+    "author": "Martin Luther King, Jr"
+  },
+  {
+    "quote": "Act as if what you do makes a difference. It does.",
+    "author": "William James, American philosopher and psychologist"
+  },
+  {
+    "quote": "Be the change that you wish to see in the world.",
+    "author": "Mahatma Ghandi"
+  },
+  {
+    "quote": "Don't sit down and wait for the opportunities to come. Get up and make them.",
+    "author": "Madam C.J. Walker, American entrepreneur and activist"
+  },
+  {
+    "quote": "Opportunity is missed by most people because it is dressed in overalls and looks like work.",
+    "author": "Thomas Edison"
+  },
+  {
+    "quote": "The most difficult thing is the decision to act; the rest is merely tenacity.",
+    "author": "Amelia Earhart"
+  },
+  {
+    "quote": "The bad news is time flies. The good news is you're the pilot.",
+    "author": "Michael Altshuler, American author and motivational speaker"
+  },
+  {
+    "quote": "I can't change the direction of the wind, but I can adjust my sails to always reach my destination.",
+    "author": "Jimmy Dean"
+  },
+  {
+    "quote": "You get what you give.",
+    "author": "Jennifer Lopez"
+  },
+  {
+    "quote": "It is often the small steps, not the giant leaps, that bring about the most lasting change.",
+    "author": "Queen Elizabeth II"
+  },
+  {
+    "quote": "If what you have done yesterday still looks big to you, you haven't done much today.",
+    "author": "Mikhail Gorbachev"
+  },
+  {
+    "quote": "In the long run, you make your own luck — good, bad, or indifferent.",
+    "author": "Loretta Lynn"
+  },
+  {
+    "quote": "If my mind can conceive it, if my heart can believe it, then I can achieve it.",
+    "author": "Muhammad Ali "
+  },
+  {
+    "quote": "Believe you can and you're halfway there.",
+    "author": "Theodore Roosevelt"
+  },
+  {
+    "quote": "If you want to lift yourself up, lift up someone else.",
+    "author": "Booker T. Washington"
+  },
+  {
+    "quote": "We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.",
+    "author": "Marie Curie, French physicist and chemist"
+  },
+  {
+    "quote": "The people who are crazy enough to think they can change the world are the ones who do.",
+    "author": "Steve Jobs"
+  },
+  {
+    "quote": "I scorched the earth with my talent and I let my light shine.",
+    "author": "André Leon Talley, American fashion journalist"
+  },
+  {
+    "quote": "Never bend your head. Always hold it high. Look the world straight in the eye." ,
+    "author": "Helen Keller"
+  },
+  {
+    "quote": "Never allow a person to tell you no who doesn’t have the power to say yes." ,
+    "author": "Eleanor Roosevelt"
+  },
+  {
+    "quote": "It took me quite a long time to develop a voice, and now that I have it, I am not going to be silent.",
+    "author": "Madeleine Albright, former U.S. Secretary of State"
+  },
+  {
+    "quote": "You are never too old to set another goal or to dream a new dream." ,
+    "author": "C.S. Lewis"
+  },
+  {
+    "quote": "When you have a dream, you've got to grab it and never let go.",
+    "author": "Carol Burnett, American comedian and actress"
+  },
+  {
+    "quote": "Let us make our future now, and let us make our dreams tomorrow's reality.",
+    "author": "Malala Yousafzai, Pakistani activist"
+  },
+  {
+    "quote": "All our dreams can come true — if we have the courage to pursue them." ,
+    "author": "Walt Disney"
+  },
+   {
+    "quote": "Go confidently in the direction of your dreams. Live the life you have imagined." ,
+    "author": "Henry David Thoreau"
+  },
+  {
+    "quote": "All dreams are within reach. All you have to do is keep moving towards them." ,
+    "author": "Viola Davis, American actress"
+  },
+  {
+    "quote":"There is nothing impossible to they who will try."  ,
+    "author": "Alexander the Great"
+  },
+  {
+    "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts." ,
+    "author": "Winston Churchill"
+  },
+  {
+    "quote": "Champions keep playing until they get it right." ,
+    "author": "Billie Jean King, American tennis player"
+  },
+  {
+    "quote": "We will fail when we fail to try."  ,
+    "author": "Rosa Parks"
+  },
+  {
+    "quote": "A person who never made a mistake never tried anything new." ,
+    "author": "Albert Einsteins"
+  },
+  {
+    "quote": "I have learned not to allow rejection to move me." ,
+    "author": "Cicely Tyson, American actress"
+  },
+  {
+    "quote": "Once you replace negative thoughts with positive ones, you'll start having positive results."  ,
+    "author": "Willie Nelson"
+  },
+
+   {
+    "quote": "Optimism is a happiness magnet. If you stay positive, good things and good people will be drawn to you." ,
+    "author": "Mary Lou Retton, American gymnast"
+  },
+  {
+    "quote": "Where there's hope, there's life. It fills us with fresh courage and makes us strong again."  ,
+    "author": "Anne Frank in The Diary of a Young Girl"
+  },
+  {
+    "quote": "Once you face your fear, nothing is ever as hard as you think."   ,
+    "author": "Olivia Newton-John, British-Australian singer and actress"
+  },
+  {
+    "quote": "You’re braver than you believe, stronger than you seem, and smarter than you think." ,
+    "author": "A.A. Milne"
+  },
+  {
+    "quote": "Happiness often sneaks in through a door you didn't know you left open." ,
+    "author": "John Barrymore"
+  },
+  {
+    "quote": "The miracle is not that we do this work, but that we are happy to do it."  ,
+    "author": "Mother Theresa"
+  },
+   {
+    "quote": "Stay close to anything that makes you glad you are alive." ,
+    "author": "Hafez"
+  },
+  {
+    "quote": "Try to be a rainbow in someone else's cloud."  ,
+    "author": "Maya Angelou"
+  }
 ]

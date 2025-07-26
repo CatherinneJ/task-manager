@@ -1,0 +1,19 @@
+.home-text {
+    /* word-wrap: break-word; */
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    max-width: 500px;
+    padding: 1rem;
+    margin: 1.5rem;
+    font-style: italic;
+}
+
+.home-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}

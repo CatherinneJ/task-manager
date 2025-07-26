@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './app.css';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
@@ -25,6 +25,7 @@ function App() {
           } />
         </Routes>
     </div>
+
   );
 
  
