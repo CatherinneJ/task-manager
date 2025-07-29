@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { TaskManagerContext } from "../context/task-manager-context";
+import './tasklist.css'
 
 function TaskListItem({ task }) {
 	const { handleUpdateTask } = useContext(TaskManagerContext);
@@ -62,10 +63,10 @@ export default function TaskList(props) {
 				setNewTask("");
 			}}>
 				<label htmlFor="task" style={style.label}>New Task:</label>
-				<input type="text" id="task" style={style.input} value={newTask} onChange={(e) => setNewTask(e.target.value)} />
+				<input type="text" id="task" style={style.input} value={newTask} onChange={(e) => setNewTask(e.target.value)} className="task-input" />
 				<button type="submit" style={style.button}>Add Task</button>
 			</form>
-			<ul style={style.list}>
+			<ul style={style.list} className="task-list">
 				{tasks.filter(task => !task.completed).map((task, index) => (
 					<TaskListItem
 						key={task.id}

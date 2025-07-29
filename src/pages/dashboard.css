@@ -18,11 +18,11 @@ font-size: 15px;
    padding: 5px;
    margin: 10px;
    width: 250px;
-   height: 200px;
 }
 .dashboard-box{
     border: 3px solid rgb(71, 9, 148);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
 }

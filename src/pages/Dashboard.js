@@ -9,34 +9,28 @@ const Dashboard = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
 
-    useEffect(() => {
-        const fetchQuote = async () => {
-            try {
-                const response = await axios.get('https://api.api-ninjas.com/v1/quotes', {
-                    headers: {
-                        'X-Api key': import.meta.env.VITE_API_KEY,
-                    }
-                });
-
-                setQuotes(response.data);
-            } catch (apiError) {
-                console.warn("API failled, use useback quotes", apiError);
-                try {
-                    const useback = await import('../assets/usebackQuotes.json');
-                    setQuotes(useback.default);
-                } catch (jsonError) {
-                    console.error('Useback JSON load failed:', jsonError)
-                    setError('Could not loadi quotes.');
+    const fetchQuotes = async () => {
+        try {
+            const request = () => axios.get('https://api.api-ninjas.com/v1/quotes', {
+                headers: {
+                    'X-Api-Key': 'FJwtsJC4IYUUi5bDtIC2dw==LgXkDfQKL8qe1yxo',
                 }
-            } finally {
-                setLoading(false);
-            };
+            });
+            const responses = await Promise.all([request(), request(), request(), request(), request()]);
+            setQuotes(responses.map(response => response.data[0]));
+        } catch (apiError) {
+            console.warn("API failled, use useback quotes", apiError);
+        } finally {
+            setLoading(false);
         };
+    };
 
-        fetchQuote();
+
+    useEffect(() => {
+        fetchQuotes();
     }, []);
 
-    if (loading) return <p>Loading quotes ....</p>;
+    if (loading) return <p style={{ color: 'white' }}>Loading quotes ....</p>;
     if (error) return <p className='dashboard-er'>{error}</p>;
 
 

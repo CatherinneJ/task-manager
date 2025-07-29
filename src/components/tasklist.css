@@ -1,0 +1,8 @@
+@media (max-width: 1024px) {
+	.task-list {
+		width: 100% !important;
+	}
+	.task-input {
+		width: 180px !important;
+	}
+}
