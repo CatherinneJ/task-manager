@@ -19,7 +19,7 @@ const Dashboard = () => {
             const responses = await Promise.all([request(), request(), request(), request(), request()]);
             setQuotes(responses.map(response => response.data[0]));
         } catch (apiError) {
-            console.warn("API failled, use useback quotes", apiError);
+            alert("API failed, check your internet connection or try again later.");
         } finally {
             setLoading(false);
         };
