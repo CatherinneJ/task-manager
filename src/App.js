@@ -17,7 +17,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard" element={<ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>} />
           <Route path="/details/:id" element={<Details />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<ProtectedRoute>
