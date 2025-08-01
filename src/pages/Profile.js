@@ -17,6 +17,7 @@ const Profile = () => {
 
         <button className="profile-btn" onClick={() => {
             localStorage.removeItem("user");
+            localStorage.removeItem("tasks");
             window.location.href = "/";
         }}>
             Log Out
